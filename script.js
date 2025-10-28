@@ -22,4 +22,4 @@ window.location.href="https://drive.google.com/file/d/1yVwsaegQ-wP5e2U_FNrLeXXPW
 function hide(){
 document.getElementById("ad").style="display:none;";
 }
-document.getElementById("download").innerHTML="Download TitanKing Mobile app";
+document.getElementById("download").innerHTML="Download TitanKings Mobile app";
