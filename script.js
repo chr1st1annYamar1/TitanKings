@@ -23,5 +23,5 @@ function hide(){
 document.getElementById("ad").style="display:none;";
 }
 function start(){
-document.getElementById("download").textContent="Windows 12 on Android";
+alert("Welcome")
 }
