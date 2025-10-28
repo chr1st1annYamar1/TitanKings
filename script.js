@@ -19,3 +19,6 @@ function home(){
 function download(){
 window.location.href="https://drive.google.com/file/d/1rwtZh5tP7wF3enNUAeMDq1uJDX6YTE0O/view?usp=drivesdk";
 }
+function hide(){
+document.getElementById("ad").style="display:none;";
+}
