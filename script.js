@@ -17,9 +17,9 @@ function home(){
 	window.location.href="..//index.html";
 }
 function download(){
-window.location.href="https://drive.google.com/file/d/1rwtZh5tP7wF3enNUAeMDq1uJDX6YTE0O/view?usp=drivesdk";
+window.location.href="https://drive.google.com/file/d/1yVwsaegQ-wP5e2U_FNrLeXXPW3d7COzy/view?usp=drivesdk";
 }
 function hide(){
 document.getElementById("ad").style="display:none;";
 }
-document.getElementById("download").innerHTML="Windows 12 on Android app";
+document.getElementById("download").innerHTML="Download TitanKing Mobile app";
