@@ -93,6 +93,20 @@ marquee {
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+.box hr {
+border: 0.01px solid cyan;
+}
+.box tt {
+font-family:'inter',sans-serif;
+color:red;
+}
+.box img {
+width:80px;
+margin-right:10px;
+}
+.holder {
+display:flex;
+}
 footer {
 	padding: 10px;
 	background-color: darkcyan;
