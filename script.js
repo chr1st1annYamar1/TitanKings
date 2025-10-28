@@ -22,6 +22,3 @@ window.location.href="https://drive.google.com/file/d/1rwtZh5tP7wF3enNUAeMDq1uJD
 function hide(){
 document.getElementById("ad").style="display:none;";
 }
-function start(){
-alert("Welcome")
-}
