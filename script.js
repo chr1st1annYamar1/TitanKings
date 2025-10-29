@@ -17,7 +17,7 @@ function home(){
 	window.location.href="..//index.html";
 }
 function download(){
-window.location.href="https://drive.google.com/file/d/1yVwsaegQ-wP5e2U_FNrLeXXPW3d7COzy/view?usp=drivesdk";
+window.location.href="https://drive.google.com/file/d/1ZXBkFllGZfKa922Lfx4pZ5Qvtcc62IUt/view?usp=drivesdk";
 }
 function Hide(){
 document.getElementById("ad").style="display:none;";
