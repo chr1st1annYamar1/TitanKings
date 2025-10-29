@@ -19,7 +19,10 @@ function home(){
 function download(){
 window.location.href="https://drive.google.com/file/d/1yVwsaegQ-wP5e2U_FNrLeXXPW3d7COzy/view?usp=drivesdk";
 }
-function hide(){
+function Hide(){
 document.getElementById("ad").style="display:none;";
+}
+function hide(){
+document.getElementById("download").innerHTML="New update available for TitanKings App.";
 }
 document.getElementById("download").innerHTML="Download TitanKings Mobile app for enhanced performance.";
