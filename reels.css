@@ -1,0 +1,54 @@
+/* Reset and Full Viewport */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: black;
+    height: 100vh;
+    overflow: hidden; /* Hide default scrollbar on the body */
+}
+
+/* The Reel Container: Enables the snap scrolling */
+.reels-container {
+    height: 100vh;
+    overflow-y: scroll; /* Allows vertical scrolling */
+    scroll-snap-type: y mandatory; /* Ensures it snaps to a reel on scroll */
+}
+
+/* Each Reel Item: Takes up exactly the full screen and is a snap point */
+.reel-item {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start; /* Snap point at the top of the element */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Video Styling: Full screen coverage for the video */
+.reel-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire container */
+}
+img {
+width:60px;
+}
+/* Action Buttons Styling (TikTok-like) */
+.actions {
+    position: absolute;
+    right: 15px;
+    bottom: 20%; /* Position higher up the screen */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* For better visibility */
+}
