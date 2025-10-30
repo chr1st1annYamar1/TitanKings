@@ -13,6 +13,9 @@ function whatsapp(){
 function instagram(){
 	window.location.href="pages/instagram.html";
 }
+function reels(){
+	window.location.href="pages/reels.html";
+}
 function home(){
 	window.location.href="..//index.html";
 }
