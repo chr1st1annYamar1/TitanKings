@@ -67,3 +67,6 @@ function act()
 {
 	alert("These features aren't working yet!")
 }
+function home(){
+	window.location.href="..//index.html";
+}
