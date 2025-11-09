@@ -115,3 +115,110 @@ footer {
 hr {
 	border: 0.02px solid white;
 }
+.container {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      background-color:#ffffff;
+      border-radius:20px;
+      margin:10px;
+      padding:5px;
+}
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #222;
+    }
+
+    .slider-container {
+      position: relative;
+      overflow: hidden;
+      margin:1em;
+    }
+
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+      background-color:#ffffff;
+    }
+    .slider::-webkit-scrollbar {
+      display: none;
+    }
+
+    .app-card {
+      margin-top:5px;
+      flex: 0 0 auto;
+      width: 160px;
+      margin-right: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .app-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .app-card img {
+      width: 60%;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+    img {
+    }
+    .app-info {
+      padding: 10px;
+    }
+
+    .app-name {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 8px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      background: #1a73e8;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .download-btn:hover {
+      background: #155ab6;
+    }
+
+    /* Arrow Buttons */
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.9);
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      z-index: 5;
+    }
+
+    .arrow:hover {
+      background: #fff;
+    }
+
+    .arrow.left {
+      left: -0px;
+    }
+
+    .arrow.right {
+      right: -0px;
+    }
