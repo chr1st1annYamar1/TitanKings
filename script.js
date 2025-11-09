@@ -29,3 +29,15 @@ function hide(){
 document.getElementById("download").innerHTML="New update available for TitanKings App.";
 }
 document.getElementById("download").innerHTML="Download TitanKings Mobile app for enhanced performance.";
+    const slider = document.getElementById("slider");
+    const leftBtn = document.getElementById("leftBtn");
+    const rightBtn = document.getElementById("rightBtn");
+
+    leftBtn.addEventListener("click", () => {
+      slider.scrollBy({ left: -300, behavior: "smooth" });
+    });
+
+    rightBtn.addEventListener("click", () => {
+      slider.scrollBy({ left: 300, behavior: "smooth" });
+    });
+    
