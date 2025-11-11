@@ -137,6 +137,7 @@ hr {
     .slider {
       display: flex;
       overflow-x: auto;
+      border-radius:10px;
       scroll-behavior: smooth;
       scrollbar-width: none;
       background-color:#ffffff;
