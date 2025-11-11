@@ -87,7 +87,7 @@ marquee {
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .box {
-	background-color: white;
+	background: rgba(255, 255, 255, 0.9);
 	padding: 10px;
 	margin: 5px;
 	border-radius: 10px;
@@ -150,7 +150,7 @@ hr {
       flex: 0 0 auto;
       width: 160px;
       margin-right: 20px;
-      background: #fff;
+      background: rgba(255, 255, 255, 0.9);
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
       text-align: center;
