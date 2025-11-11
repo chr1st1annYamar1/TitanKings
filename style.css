@@ -87,7 +87,7 @@ marquee {
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .box {
-	background: rgba(255, 255, 255, 0.9);
+	background: rgba(255, 255, 255, 0.5);
 	padding: 10px;
 	margin: 5px;
 	border-radius: 10px;
@@ -117,7 +117,7 @@ hr {
 }
 .containers {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.5);
       border-radius:20px;
       margin:10px;
       padding:5px;
@@ -150,7 +150,7 @@ hr {
       flex: 0 0 auto;
       width: 160px;
       margin-right: 20px;
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.5);
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
       text-align: center;
