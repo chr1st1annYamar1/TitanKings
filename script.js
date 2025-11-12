@@ -41,3 +41,20 @@ document.getElementById("download").innerHTML="Download TitanKings Mobile app fo
       slider.scrollBy({ left: 300, behavior: "smooth" });
     });
     
+    function downa()
+{
+	window.location.href="https://drive.google.com/file/d/1gwfSmgP0t-oSeN8m2Gz8_8_7L2tKXmMD/view?usp=drivesdk";
+}
+function downb()
+{
+	window.location.href="https://drive.google.com/file/d/18OKkysZ1thjcLCAkR1DONJDnzTmrOc0b/view?usp=drivesdk";
+}
+function downc()
+{
+	window.location.href="https://drive.google.com/file/d/1gpt8wWDjNscFmgoC2I-c5sUkGvPt6lxf/view?usp=drivesdk";
+}
+function downd()
+{
+	window.location.href="https://drive.google.com/file/d/1zlPyOKe_R-hi5GfC4Ynl5eNlHEjE_f5I/view?usp=drivesdk";
+}
+    
