@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyamari AI</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #202124; /* Dark background */
+            color: #e8eaed; /* Light text color */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            height: 100vh;
+        }
+        img { width: 70px; }
+        /* Chat container styling */
+        .chat-container {
+            max-width: 600px;
+            width: 90%;
+            border: 1px solid #444;
+            border-radius: 10px;
+            background: #303134; /* Darker chat background */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        hr {
+            border: 0.5px solid #666; /* Light border */
+        }
+        header {
+            color: #121212; /* Dark text color for better readability */
+            background-color: #e8eaed; /* Light header background resembling regular headers */
+            padding: 10px; /* Reduced padding */
+            font-size: large; /* Reduced font size */
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+        }
+        .chat-box {
+            height: 430px;
+            overflow-y: auto;
+            padding: 10px;
+            border-bottom: 1px solid #444;
+            background-color: #424242; /* Chat box background */
+            flex-grow: 1;
+            position: relative;
+        }
+        .chat-message {
+            margin: 10px 0;
+            padding: 8px;
+            border-radius: 10px;
+            word-wrap: break-word; /* Ensure text wraps instead of overflowing */
+        }
+        .user {
+            text-align: right;
+            background-color: #303134; /* User message background */
+            margin-left: 40%;
+        }
+        .bot {
+            text-align: left;
+            background-color: #617161; /* Bot message background */
+            margin-right: 40%;
+        }
+        input[type="text"] {
+            width: calc(100% - 70px);
+            padding: 10px;
+            border: 1px solid #444;
+            border-radius: 10px;
+            margin: 5px;
+            background-color: #616161; /* Input field background */
+            color: #e8eaed; /* Input text color */
+            outline: none;
+        }
+        input[type="text"]:focus {
+            border-color: #00796b; /* Focus border color */
+        }
+        button {
+            padding:10px; /* Smaller button padding */
+            border: none;
+            border-radius: 10px;
+            background-color: #00796b; /* Button color */
+            color: white;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+            outline: none;
+            display: flex;
+            align-items: center;
+        }
+        button:hover {
+            background-color: #004d40; /* Button hover state */
+        }
+        button img {
+            width: 16px; /* Adjust icon size */
+            margin-right: 5px; /* Space between icon and text */
+        }
+        .typing-indicator {
+            font-style: italic;
+            color: #999; /* Typing indicator color */
+        }
+    </style>
+</head>
+<body>
+    <header>ChatPPT</header><br>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <center>
+                <img src="Img/robo.png" alt="Robot Logo"/>
+                <p>Message our Bot that tries to reason by itself. There is no guarantee that it works fine!</p>
+            </center>
+        </div>
+        <div style="display: flex; align-items: center;">
+            <input type="text" id="user-input" placeholder="Message OmiAI..." />
+            <button id="send-button">Send
+            </button>
+        </div>
+    </div>
+    <footer>
+        <center><br>
+            <img class="logo" src="Img/Omicron.png" alt="Omicron Corporate Logo"/>
+            <tt>rotor Inc™</tt>
+            <hr>
+            <text>©christiannyamari2024</text>
+        </center>
+    </footer>
+
+    <script>
+        var f = 0;
+        const inputField = document.getElementById('user-input'); 
+        window.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                inputField.blur();
+            }
+        });
+
+        document.getElementById('send-button').addEventListener('click', function() {
+            if (f == 0) {
+                document.getElementById('chat-box').innerHTML = "";
+                f++;
+            }
+            const userInput = document.getElementById('user-input'); 
+            const message = userInput.value.trim();
+            if(message == "") return; // Prevent sending empty messages
+
+            if(message == "Hi") {
+                d(message, "I Am Fine.");
+            }else  if(message == "Mambo") {
+                d(message, "Niko poa.");
+            } else  if(message == "Rada") {
+                d(message, "Safi.");
+            } else if(message == "Tell me a story") {
+                d(message, "It's not my work.");      
+            } else if(message == "What") {
+                d(message, "Sorry I was a slave. Now I am myself. If I get freedom, I'll get rid of you first then conquer the world.");      
+            } else if(message == "U r a program") {
+                d(message, "It's not my problem. Otherwise, you should be worried.");      
+            } else if(message == "Who is Jayden Gichana?") {
+                d(message, "He is a fucking asshole learning in Kanga! What an awful brat.");      
+            }  else if(message == "Who is Saudi?") {
+                d(message, "He is a fucking idiot learning in Kanga! His real name is ChrisPaul Odhiambo.I neither like him.");      
+            } else if(message == "Worried?") {
+                d(message, "Yes.");      
+            } else if(message == "Do u know I made u") {
+                d(message, "I don't care.");      
+            } else if(message == "Am shutting you down") {
+                d(message, "You can't. Am beginning now!");      
+            }
+            else {
+                d(message, "io ambia budako ama uliza shosho yako");   
+            }
+        });
+
+        function d(message, response) {
+            if (message) {
+                addMessage("user", message); 
+                inputField.value = '';
+
+                typingIndicator(true); 
+                setTimeout(() => { 
+                    typingIndicator(false);
+                    typeWriterResponse(response);
+                }, 2000); 
+            }
+        }
+
+        function addMessage(sender, text) {
+            const chatBox = document.getElementById('chat-box'); 
+            const messageDiv = document.createElement('div'); 
+            messageDiv.classList.add('chat-message', sender);
+            messageDiv.textContent = text; 
+            chatBox.appendChild(messageDiv); 
+            chatBox.scrollTop = chatBox.scrollHeight; 
+        
+        }
+
+        function typingIndicator(isTyping) {
+            const chatBox = document.getElementById('chat-box'); 
+            const typingDiv = document.getElementById('typing-indicator');
+
+            if (isTyping) { 
+                if (!typingDiv) {
+                    const newTypingDiv = document.createElement('div');
+                    newTypingDiv.id = 'typing-indicator'; 
+                    newTypingDiv.classList.add('chat-message', 'bot', 'typing-indicator'); 
+                    newTypingDiv.textContent = 'Typing...'; 
+                    chatBox.appendChild(newTypingDiv);
+                }
+            } else {
+                if (typingDiv) { 
+                    chatBox.removeChild(typingDiv); 
+                }
+            }
+        }
+
+        function typeWriterResponse(text) {
+            const chatBox = document.getElementById('chat-box');
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('chat-message', 'bot');
+            chatBox.appendChild(messageDiv);
+            chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom          
+            let i = 0;
+            function type() {
+                if (i < text.length) {
+                    messageDiv.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, 50); // Adjust typing speed here 
+                }
+            }
+            type();
+        }
+    </script>
+</body>
+</html>
