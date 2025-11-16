@@ -1,6 +1,9 @@
 function magazine(){
 	window.location.href="pages/magazine.html";
 }
+function date(){
+window.location.href="pages/date.html";
+}
 function clubs(){
 	window.location.href="pages/clubs.html";
 }
