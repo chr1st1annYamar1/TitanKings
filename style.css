@@ -228,3 +228,23 @@ hr {
     .arrow.right {
       right: -0px;
     }
+    .dbox {
+    border-radius:20px;
+    display:flex;
+    padding:10px;
+    border:1px solid #e91e63;
+    }
+    .dbox img {
+    width:100px;
+    }
+    .dbox button {
+    padding:10px;
+    color:#e91e63;
+    background-color:white;
+    border-radius:10px;
+    border:1px solid #e91e63;
+    }
+      .dbox button:hover{
+    background-color:#e91e63;   
+    color:#fff;
+      }
